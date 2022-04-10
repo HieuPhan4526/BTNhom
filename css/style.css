@@ -61,3 +61,25 @@ header{
 #capNavbar .active a{
     color: #189a46;
 }
+
+@media screen and (max-width :992px){
+    header .navbar-toggler {
+        background-color: #189a46;
+        color: white;
+        line-height: 30px;
+        border-radius: 5px;
+    }
+
+    #capNavbar .nav-link::before{
+        display: none;
+    }
+
+    #capNavbar .navbar-nav {
+        text-align: center;
+    }
+
+    #capNavbar .nav-link {
+        padding: 10px 0;
+    }
+
+}
