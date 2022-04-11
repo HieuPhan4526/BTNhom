@@ -20,6 +20,10 @@ header{
 }
 
 
+section{
+    padding: 100px 0;
+}
+
 .navbar-brand h1{
     color: #189a46;
     font-size: 34px;
@@ -83,3 +87,5 @@ header{
     }
 
 }
+
+/* Choose */
