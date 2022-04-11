@@ -8,3 +8,78 @@ html,body{
     font-family: 'Jost', sans-serif;
     
 }
+
+
+/* HEADER */
+
+header{
+    background-color: rgba(137, 43, 226, 0.388);
+    position: fixed;
+    top: 30px;
+    width: 100%;
+}
+
+
+.navbar-brand h1{
+    color: #189a46;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+#capNavbar .nav-item{
+    padding: 0 5px;
+}
+#capNavbar .nav-link{
+    color: black;
+    font-size: 1.2rem;
+    padding: 5px;
+    font-weight: 400;
+  
+    position: relative;
+
+    transition: all 0.5s;
+}
+
+#capNavbar .nav-link:hover{
+    color: #189a46;
+}
+
+#capNavbar .nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #189a46;
+    transition: all 0.5s;
+}
+#capNavbar .nav-link:hover::before{
+    width: 100%;
+}
+
+#capNavbar .active a{
+    color: #189a46;
+}
+
+@media screen and (max-width :992px){
+    header .navbar-toggler {
+        background-color: #189a46;
+        color: white;
+        line-height: 30px;
+        border-radius: 5px;
+    }
+
+    #capNavbar .nav-link::before{
+        display: none;
+    }
+
+    #capNavbar .navbar-nav {
+        text-align: center;
+    }
+
+    #capNavbar .nav-link {
+        padding: 10px 0;
+    }
+
+}
