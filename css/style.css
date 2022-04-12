@@ -44,8 +44,12 @@ section{
     color: rgba(0, 0, 0, 0.511);
     padding: 10px 0;
 }
-
-
+.title--center{
+    text-align: center;
+}
+.title--center p:first-of-type{
+    color: #f53626;
+}
 .navbar-brand h1{
     color: #189a46;
     font-size: 34px;
@@ -147,4 +151,9 @@ section{
     background-color: azure;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+/* Testimoial */
+.Testimonial{
+    background-color: rgb(147 107 232 / 5%);
 }
