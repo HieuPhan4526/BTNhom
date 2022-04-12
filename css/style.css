@@ -157,3 +157,39 @@ section{
 .Testimonial{
     background-color: rgb(147 107 232 / 5%);
 }
+.item .card{
+    width: 515px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.card-text::before{
+    content: "''";
+    font-size: 50px;
+    font-weight: 600;
+    color: #189a46;
+    line-height: 8px;
+}
+.item .card-text{
+    font-size: 20px;
+}
+.card-bottom {
+    display: flex;
+    align-items: center;
+}
+.card-img{
+    width: 65px;
+    margin: 20px;
+}
+.card-img img{
+    border-radius: 50%;
+}
+.card-text,
+.card-city p{
+    color: rgba(0, 0, 0, 0.482);
+}
+.card-city h3{
+    font-weight: 600;
+}
+.Testimoial__content {
+    margin-top: 50px;
+}
