@@ -20,6 +20,32 @@ header{
 }
 
 
+section{
+    padding: 100px 0;
+}
+
+
+.title p:first-of-type{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2rem;
+    color: #f53626;
+}
+.title h2{
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.title p:last-of-type{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.511);
+    padding: 10px 0;
+}
+
+
 .navbar-brand h1{
     color: #189a46;
     font-size: 34px;
@@ -82,4 +108,43 @@ header{
         padding: 10px 0;
     }
 
+}
+
+/* Choose */
+
+.Choose__content{
+    display: flex;
+    align-items: center;
+}
+.Choose__left{
+    width: 50%;
+    margin-right: 50px;
+}
+.Choose__left img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.Choose__right {
+    width: 50%;
+}
+
+.Choose__right ul{
+    list-style: none;
+}
+.Choose__right li{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    color: black;
+    margin: 15px 0;
+}
+
+.Choose__right i {
+    color: #189a46;
+    font-size: 10px;
+    padding: 8px;
+    background-color: azure;
+    border-radius: 50%;
+    margin-right: 10px;
 }
