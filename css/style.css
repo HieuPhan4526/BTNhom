@@ -24,6 +24,28 @@ section{
     padding: 100px 0;
 }
 
+
+.title p:first-of-type{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2rem;
+    color: #f53626;
+}
+.title h2{
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.title p:last-of-type{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.511);
+    padding: 10px 0;
+}
+
+
 .navbar-brand h1{
     color: #189a46;
     font-size: 34px;
@@ -105,25 +127,6 @@ section{
 
 .Choose__right {
     width: 50%;
-}
-.title p:first-of-type{
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 2rem;
-    color: #f53626;
-}
-.title h2{
-    font-size: 38px;
-    font-weight: 600;
-    line-height: 48px;
-    text-transform: uppercase;
-}
-
-.title p:last-of-type{
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.511);
-    padding: 10px 0;
 }
 
 .Choose__right ul{
