@@ -193,3 +193,13 @@ section{
 .Testimoial__content {
     margin-top: 50px;
 }
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span{
+    background-color: #189a46;
+    width: 30px;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots{
+    margin-top: 40px;
+}
