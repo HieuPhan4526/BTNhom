@@ -13,10 +13,12 @@ html,body{
 /* HEADER */
 
 header{
-    background-color: rgba(137, 43, 226, 0.388);
+    background-color: white;
     position: fixed;
     top: 30px;
     width: 100%;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+    z-index: 99;
 }
 
 
