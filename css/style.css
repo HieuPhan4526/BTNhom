@@ -118,22 +118,21 @@ section{
 
 /* Choose */
 
-.Choose__content{
+/* .Choose__content{
     display: flex;
     align-items: center;
-}
-.Choose__left{
-    width: 50%;
-    margin-right: 50px;
-}
+} */
+/* .Choose__left{ */
+    /* width: 50%; */
+    /* margin-right: 50px; */
+/* } */
 .Choose__left img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
 }
-
-.Choose__right {
+/* .Choose__right {
     width: 50%;
-}
+} */
 
 .Choose__right ul{
     list-style: none;
@@ -154,7 +153,9 @@ section{
     border-radius: 50%;
     margin-right: 10px;
 }
-
+.Choose__content .row{
+    align-items: center;
+}
 /* Testimoial */
 .Testimonial{
     background-color: rgb(147 107 232 / 5%);
