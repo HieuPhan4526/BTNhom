@@ -117,7 +117,7 @@ section{
 }
 
 /* Choose */
-
+/* * Khi sử dụng resposive theo BS4 thì k cần những code này */
 /* .Choose__content{
     display: flex;
     align-items: center;
@@ -126,13 +126,14 @@ section{
     /* width: 50%; */
     /* margin-right: 50px; */
 /* } */
+
+/* .Choose__right {
+    width: 50%;
+} */
 .Choose__left img {
     width: 100%;
     border-radius: 15px;
 }
-/* .Choose__right {
-    width: 50%;
-} */
 
 .Choose__right ul{
     list-style: none;
@@ -166,6 +167,7 @@ section{
     border-radius: 10px;
     margin-right: 20px;
 }
+/* * thêm FONT-GG mới vào mới có thể sài dấu của Before */
 .card-text::before{
     content: "“";
     font-size: 50px;
