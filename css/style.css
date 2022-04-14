@@ -10,18 +10,6 @@ html,body{
 }
 
 
-/* HEADER */
-
-header{
-    background-color: white;
-    position: fixed;
-    top: 30px;
-    width: 100%;
-    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
-    z-index: 99;
-}
-
-
 section{
     padding: 100px 0;
 }
@@ -59,6 +47,18 @@ section{
     font-size: 34px;
     font-weight: 600;
 }
+
+/* HEADER */
+
+header{
+    background-color: white;
+    position: fixed;
+    top: 30px;
+    width: 100%;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+    z-index: 99;
+}
+
 
 #capNavbar .nav-item{
     padding: 0 5px;
@@ -117,6 +117,50 @@ section{
     }
 
 }
+/* Light Theme */
+/* #myBody{
+    background-color: white;
+}
+#switchButton{
+    background-color: white;
+    border: none;
+}
+#switchButton .fa-sun{
+    display: none;
+}
+
+#switchButton .fa-moon{
+    display: block;
+
+} */
+
+/* Dark Theme*/
+/* .dark#myBody{
+    background-color: black;
+  }
+  .dark #switchButton {
+      background-color: black;
+  }
+  .dark #switchButton .fa-sun {
+    display: block;
+    color: white;
+  }
+  
+  .dark #switchButton .fa-moon {
+    display: none;
+  }
+  .dark .card {
+    background-color: black;
+    color: white;
+  }
+.dark header{
+    background-color: black;
+}
+.dark #capNavbar .nav-link{
+    color: white;
+} */
+
+
 
 /* Choose */
 /* * Khi sử dụng resposive theo BS4 thì k cần những code này */
@@ -180,6 +224,13 @@ section{
     line-height: 8px;
     font-family: 'Merriweather', serif;
 }
+.card-text::after{
+    content: "''";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 8px;
+
+}
 .item .card-text{
     font-size: 20px;
 }
@@ -193,10 +244,6 @@ section{
 }
 .card-img img{
     border-radius: 50%;
-}
-.card-text,
-.card-city p{
-    color: rgba(0, 0, 0, 0.482);
 }
 .card-city h3{
     font-weight: 600;
@@ -244,5 +291,5 @@ section{
 .cd-top--is-visible {
     visibility: visible;
     opacity: 1;
-  }
+}
   
