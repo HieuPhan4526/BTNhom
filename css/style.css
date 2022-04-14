@@ -160,16 +160,18 @@ section{
     background-color: rgb(147 107 232 / 5%);
 }
 .item .card{
-    width: 515px;
+    width: 100%;
     border: 1px solid white;
     border-radius: 10px;
+    margin-right: 20px;
 }
 .card-text::before{
-    content: "''";
+    content: "“";
     font-size: 50px;
     font-weight: 600;
     color: #189a46;
     line-height: 8px;
+    font-family: 'Merriweather', serif;
 }
 .item .card-text{
     font-size: 20px;
