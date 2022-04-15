@@ -52,15 +52,15 @@
 
     <header>
         <nav class="container navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">
-                <h1>
-                    Pooch Care
-                </h1>
-            </a>
+            <h1>
+                <a class="navbar-brand" href="#">Pooch Care</a>
+            </h1>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#capNavbar"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
+
+
             <div class="collapse navbar-collapse" id="capNavbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
@@ -105,12 +105,12 @@
                         <a class="nav-link disabled">Disabled</a>
                     </li> -->
                 </ul>
-
-                <!-- <button class="bth" id="switchButton" title="Click to switch theme">
+            </div>
+            <div class="light-dark">
+                <button class="bth" id="switchButton" title="Click to switch theme">
                     <i class="far fa-moon"></i>
                     <i class="far fa-sun"></i>
-                </button> -->
-
+                </button>
             </div>
         </nav>
     </header>
@@ -136,14 +136,8 @@
                                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor
                                 sit amet,
                                 consectetur adipisicingelit,
-                            </p>
 
-                            Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor sit
-                            amet,
-                            consectetur adipisicingelit,
                             </p>
-
                         </div>
                         <ul>
                             <li>
@@ -339,7 +333,7 @@
 
 
 
-     <!-- JS light dark -->
+    <!-- JS light dark -->
 
     <!-- 
         Solution: 
@@ -353,15 +347,15 @@
     gắn chức năng click cho switchButton -->
 
 
-    <!-- <script>
+    <script>
         document.getElementById("switchButton").onclick = function () {
 
-             khi button được click thì tìm đến thẻ body có id là myBody
-             dùng classlist để gọi thuộc tính class của thẻ body
-            Sử dụng toggle() để thêm hoặc xóa 1 class của thẻ html. Nếu thẻ body không có class dark thì toggle sẽ thêm class dark vào body. Ngược lại, nếu thẻ body đang có class dark thì toogle sẽ xóa class dark đi.
+            //khi button được click thì tìm đến thẻ body có id là myBody
+            //dùng classlist để gọi thuộc tính class của thẻ body
+            //Sử dụng toggle() để thêm hoặc xóa 1 class của thẻ html. Nếu thẻ body không có class dark thì toggle sẽ thêm class dark vào body. Ngược lại, nếu thẻ body đang có class dark thì toogle sẽ xóa class dark đi.
             document.getElementById("myBody").classList.toggle("dark");
         }
-    </script> -->
+    </script>
 
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -407,9 +401,9 @@
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
 
-   
 
-   
+
+
 
 </body>
 
