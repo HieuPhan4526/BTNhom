@@ -55,9 +55,10 @@
             <h1>
                 <a class="navbar-brand" href="#">Pooch Care</a>
             </h1>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#capNavbar"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
+            <button id="switch" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#capNavbar" aria-expanded="false" aria-label="Toggle navigation" title="Click to switch theme">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-times"></i>
+
             </button>
 
 
@@ -404,6 +405,11 @@
 
 
 
+        <script>
+            document.getElementById("switch").onclick = function () {
+                document.getElementById("myBody").classList.toggle("noscroll");
+            }
+        </script>
 
 </body>
 
