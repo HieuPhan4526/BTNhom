@@ -1,82 +1,91 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     font-family: 'Jost', sans-serif;
-    
+
 }
 
 
-/* HEADER */
-
-header{
-    background-color: rgba(137, 43, 226, 0.388);
-    position: fixed;
-    top: 30px;
-    width: 100%;
-}
-
-
-section{
+section {
     padding: 100px 0;
 }
 
 
-.title p:first-of-type{
+.title p:first-of-type {
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
     line-height: 2rem;
     color: #f53626;
 }
-.title h2{
+
+.title h2 {
     font-size: 38px;
     font-weight: 600;
     line-height: 48px;
     text-transform: uppercase;
 }
 
-.title p:last-of-type{
+.title p:last-of-type {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.511);
     padding: 10px 0;
 }
 
 
-.title--center{
+.title--center {
     text-align: center;
 }
-.title--center p:first-of-type{
+
+.title--center p:first-of-type {
     color: #f53626;
 }
-.navbar-brand h1{
+
+
+
+/* HEADER */
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 30px;
+    width: 100%;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+    z-index: 99;
+}
+
+.navbar .navbar-brand {
     color: #189a46;
     font-size: 34px;
     font-weight: 600;
+    text-transform: capitalize;
 }
 
-#capNavbar .nav-item{
+#capNavbar .nav-item {
     padding: 0 5px;
 }
-#capNavbar .nav-link{
+
+#capNavbar .nav-link {
     color: black;
     font-size: 1.2rem;
     padding: 5px;
     font-weight: 400;
-  
+
     position: relative;
 
     transition: all 0.5s;
 }
 
-#capNavbar .nav-link:hover{
+#capNavbar .nav-link:hover {
     color: #189a46;
 }
 
-#capNavbar .nav-link::before{
+#capNavbar .nav-link::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -86,15 +95,16 @@ section{
     background-color: #189a46;
     transition: all 0.5s;
 }
-#capNavbar .nav-link:hover::before{
+
+#capNavbar .nav-link:hover::before {
     width: 100%;
 }
 
-#capNavbar .active a{
+#capNavbar .active a {
     color: #189a46;
 }
 
-@media screen and (max-width :992px){
+@media screen and (max-width :992px) {
     header .navbar-toggler {
         background-color: #189a46;
         color: white;
@@ -102,7 +112,7 @@ section{
         border-radius: 5px;
     }
 
-    #capNavbar .nav-link::before{
+    #capNavbar .nav-link::before {
         display: none;
     }
 
@@ -113,32 +123,133 @@ section{
     #capNavbar .nav-link {
         padding: 10px 0;
     }
+    .dark #capNavbar .nav-link:hover {
+        color: #189a46;
+    }
+    
+    .dark #capNavbar .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: #189a46;
+        transition: all 0.5s;
+    }
+    
+    .dark #capNavbar .nav-link:hover::before {
+        width: 100%;
+    }
+    
+    .dark #capNavbar .active a {
+        color: #189a46;
+    }
+    .light-dark{
+        position: absolute;
+        right: 80px;
+        top: 25px;
+    }
+
+
 
 }
+
+/* Light Theme  */
+#myBody {
+    background-color: white;
+}
+
+#switchButton {
+    background-color: white;
+    border: none;
+}
+
+#switchButton .fa-sun {
+    display: none;
+}
+
+#switchButton .fa-moon {
+    display: block;
+    font-size: 30px;
+
+}
+
+/* Dark Theme  */
+
+.dark#myBody {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dark #switchButton {
+    background-color: black;
+}
+
+.dark #switchButton .fa-sun {
+    display: block;
+    color: white;
+    font-size: 30px;
+}
+
+.dark #switchButton .fa-moon {
+    display: none;
+}
+
+.dark .card {
+    background-color: black;
+    color: white;
+}
+
+.dark header {
+    background-color: black;
+}
+
+.dark #capNavbar .nav-link {
+    color: white;
+}
+.dark .title h2{
+    color: white;
+}
+.dark .title p:last-of-type{
+    color: rgba(255, 255, 255, 0.504);
+}
+.dark .Choose__right li {
+    color: #ddd;
+}
+.dark #capNavbar .active a {
+    color: #189a46;
+}
+.light-dark{
+    margin : 0 20px;
+}
+
+
+
 
 /* Choose */
-
-.Choose__content{
+/* * Khi sử dụng resposive theo BS4 thì k cần những code này */
+/* .Choose__content{
     display: flex;
     align-items: center;
-}
-.Choose__left{
+} */
+/* .Choose__left{ */
+/* width: 50%; */
+/* margin-right: 50px; */
+/* } */
+
+/* .Choose__right {
     width: 50%;
-    margin-right: 50px;
-}
+} */
 .Choose__left img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
-.Choose__right {
-    width: 50%;
-}
-
-.Choose__right ul{
+.Choose__right ul {
     list-style: none;
 }
-.Choose__right li{
+
+.Choose__right li {
     font-size: 16px;
     font-weight: 600;
     line-height: 26px;
@@ -155,53 +266,105 @@ section{
     margin-right: 10px;
 }
 
+.Choose__content .row {
+    align-items: center;
+}
+
 /* Testimoial */
-.Testimonial{
+.Testimonial {
     background-color: rgb(147 107 232 / 5%);
 }
-.item .card{
-    width: 515px;
+
+.item .card {
+    width: 100%;
     border: 1px solid white;
     border-radius: 10px;
+    margin-right: 20px;
 }
-.card-text::before{
-    content: "''";
+
+/* * thêm FONT-GG mới vào mới có thể sài dấu của Before */
+
+
+.card-text::before {
+    content: "“";
     font-size: 50px;
     font-weight: 600;
     color: #189a46;
     line-height: 8px;
+    font-family: 'Merriweather', serif;
 }
-.item .card-text{
+
+.card-text::after {
+    content: "''";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 8px;
+
+}
+
+.item .card-text {
     font-size: 20px;
 }
+
 .card-bottom {
     display: flex;
     align-items: center;
 }
-.card-img{
+
+.card-img {
     width: 65px;
     margin: 20px;
 }
-.card-img img{
+
+.card-img img {
     border-radius: 50%;
 }
-.card-text,
-.card-city p{
-    color: rgba(0, 0, 0, 0.482);
-}
-.card-city h3{
+
+.card-city h3 {
     font-weight: 600;
 }
+
 .Testimoial__content {
     margin-top: 50px;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span{
+.owl-theme .owl-dots .owl-dot:hover span {
     background-color: #189a46;
     width: 30px;
 }
 
-.owl-theme .owl-nav.disabled+.owl-dots{
+.owl-theme .owl-nav.disabled+.owl-dots {
     margin-top: 40px;
+}
+
+.BackToTop {
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #189a46;
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+    transform: translateY(0);
+    transition: all 0.5s;
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.BackToTop:hover {
+    transform: translateY(-10px);
+    text-decoration: none;
+    color: white;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
 }

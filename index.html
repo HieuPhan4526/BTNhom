@@ -14,10 +14,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap" rel="stylesheet">
 
+    <!-- Font gg tesmial -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 
 
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -42,23 +48,18 @@
     <title>CAPSTONE</title>
 </head>
 
-<body>
+<body id="myBody">
 
     <header>
-        <nav class="container-xl navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">
-                <h1>
-                    Pooch Care
-                </h1>
-            </a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-                data-target="#capNavbar" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+        <nav class="container navbar navbar-expand-lg">
+            <h1>
+                <a class="navbar-brand" href="#">Pooch Care</a>
+            </h1>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#capNavbar"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-square-xmark"></i>
             </button>
+
 
             <div class="collapse navbar-collapse" id="capNavbar">
                 <ul class="navbar-nav ml-auto">
@@ -81,13 +82,12 @@
                         <a class="nav-link" href="#">
                             Blog
                             <i class="fa fa-angle-down"></i>
-
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
-                    
+
 
                     <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -105,9 +105,13 @@
                         <a class="nav-link disabled">Disabled</a>
                     </li> -->
                 </ul>
-
             </div>
-            <div class="Light-dark"></div>
+            <div class="light-dark">
+                <button class="bth" id="switchButton" title="Click to switch theme">
+                    <i class="far fa-moon"></i>
+                    <i class="far fa-sun"></i>
+                </button>
+            </div>
         </nav>
     </header>
 
@@ -115,45 +119,50 @@
     <section class="About"></section>
     <section class="Choose container">
         <div class="Choose__content">
-            <div class="Choose__left">
-                <img src="./img/Screen Shot 2022-04-10 at 21.28.16.png" alt="">
-            </div>
-            <div class="Choose__right">
-                <div class="title">
-                    <p>WHY CHOOSE US</p>
-                    <h2>What We Offer For You</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor sit amet, consectetur adipisicingelit,
-                    </p>
-        
-                        Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor sit amet,
-                        consectetur adipisicingelit,
-                    </p>
-
+            <div class="row">
+                <div class="col-sm-12 col-lg-6 mb-5">
+                    <div class="Choose__left">
+                        <img src="./img/ab.jpg" alt="">
+                    </div>
                 </div>
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        Certified Groomer
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        10 Years of Experience
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        Pet Lover
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        Customer Supports
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        Veterinary Helps
-                    </li>
-                </ul>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="Choose__right">
+                        <div class="title">
+                            <p>WHY CHOOSE US</p>
+                            <h2>What We Offer For You</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor
+                                sit amet,
+                                consectetur adipisicingelit,
+
+                            </p>
+                        </div>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Certified Groomer
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                10 Years of Experience
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Pet Lover
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Customer Supports
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Veterinary Helps
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -162,14 +171,14 @@
     <section class="plans"></section>
     <section class="nutriton"></section>
     <section class="Testimonial">
-        
-        <div class="container">
+
+        <div class="container ">
             <div class="title title--center">
                 <p>TESTIMONIALS</p>
                 <h2>Happy Clients & Feedbacks</h2>
             </div>
             <div class="Testimoial__content">
-                <div class="owl-carousel owl-theme">
+                <div class="owl-two owl-carousel owl-theme">
                     <div class="item">
                         <div class="card">
                             <div class="card-body">
@@ -181,7 +190,7 @@
                             </div>
                             <div class="card-bottom">
                                 <div class="card-img">
-                                    <img src="./img/Screen Shot 2022-04-10 at 21.28.16.png" alt="">
+                                    <img src="./img/f1.jpg" alt="">
                                 </div>
                                 <div class="card-city">
                                     <h3>
@@ -205,7 +214,7 @@
                             </div>
                             <div class="card-bottom">
                                 <div class="card-img">
-                                    <img src="./img/Screen Shot 2022-04-10 at 21.28.16.png" alt="">
+                                    <img src="./img/f2.jpg" alt="">
                                 </div>
                                 <div class="card-city">
                                     <h3>
@@ -229,7 +238,7 @@
                             </div>
                             <div class="card-bottom">
                                 <div class="card-img">
-                                    <img src="./img/Screen Shot 2022-04-10 at 21.28.16.png" alt="">
+                                    <img src="./img/f3.jpg" alt="">
                                 </div>
                                 <div class="card-city">
                                     <h3>
@@ -253,7 +262,7 @@
                             </div>
                             <div class="card-bottom">
                                 <div class="card-img">
-                                    <img src="./img/Screen Shot 2022-04-10 at 21.28.16.png" alt="">
+                                    <img src="./img/f4.jpg" alt="">
                                 </div>
                                 <div class="card-city">
                                     <h3>
@@ -277,7 +286,7 @@
                             </div>
                             <div class="card-bottom">
                                 <div class="card-img">
-                                    <img src="./img/Screen Shot 2022-04-10 at 21.28.16.png" alt="">
+                                    <img src="./img/f2.jpg" alt="">
                                 </div>
                                 <div class="card-city">
                                     <h3>
@@ -301,7 +310,7 @@
                             </div>
                             <div class="card-bottom">
                                 <div class="card-img">
-                                    <img src="./img/Screen Shot 2022-04-10 at 21.28.16.png" alt="">
+                                    <img src="./img/f3.jpg" alt="">
                                 </div>
                                 <div class="card-city">
                                     <h3>
@@ -314,30 +323,75 @@
                             </div>
                         </div>
                     </div>
-                    
+
 
                 </div>
     </section>
     <footer></footer>
+    <a href="#" class="BackToTop cd-top text-replace js-cd-top">⤴</a>
 
 
 
+
+    <!-- JS light dark -->
+
+    <!-- 
+        Solution: 
+    Khi click vào nút moon 🌙 , thẻ body sẽ được thêm class dark.
+    Dựa vào class dark, ta viết css dành riêng cho dark theme.
+
+    Ngược lại, khi click vào nút sun ☀️, ta sẽ xóa class dark để css light theme hiện lại
+     -->
+
+    <!-- gọi thẻ button có id là switchButton
+    gắn chức năng click cho switchButton -->
+
+
+    <script>
+        document.getElementById("switchButton").onclick = function () {
+
+            //khi button được click thì tìm đến thẻ body có id là myBody
+            //dùng classlist để gọi thuộc tính class của thẻ body
+            //Sử dụng toggle() để thêm hoặc xóa 1 class của thẻ html. Nếu thẻ body không có class dark thì toggle sẽ thêm class dark vào body. Ngược lại, nếu thẻ body đang có class dark thì toogle sẽ xóa class dark đi.
+            document.getElementById("myBody").classList.toggle("dark");
+        }
+    </script>
 
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
     <!-- owl carousel -->
     <script src="./js/owl.carousel.min.js"></script>
 
     <script>
-        $('.owl-carousel').owlCarousel({
+        $('.owl-two').owlCarousel({
             loop: true,
             items: 2,
-            margin: 10,
+            margin: 20,
+            nav: false,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                992: {
+                    items: 1,
+                },
+                1000: {
+                    items: 2,
+                    nav: false,
+                    loop: false,
+                }
+            }
         })
 
     </script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/util.js"></script>
 
     <!-- BS4 -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -346,6 +400,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
+
+
+
+
 
 </body>
 
