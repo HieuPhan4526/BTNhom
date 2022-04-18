@@ -223,6 +223,21 @@ header {
     margin : 0 20px;
 }
 
+/** Click đổi bars */
+#switch .fa-times{
+    display: none;
+}
+
+#switch .fa-bars{
+    display: block;
+}
+
+.noscroll #switch .fa-times{
+    display: block;
+}
+.noscroll #switch .fa-bars{
+    display: none;
+}
 
 
 
