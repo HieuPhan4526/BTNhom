@@ -347,15 +347,7 @@
     gắn chức năng click cho switchButton -->
 
 
-    <script>
-        document.getElementById("switchButton").onclick = function () {
-
-            //khi button được click thì tìm đến thẻ body có id là myBody
-            //dùng classlist để gọi thuộc tính class của thẻ body
-            //Sử dụng toggle() để thêm hoặc xóa 1 class của thẻ html. Nếu thẻ body không có class dark thì toggle sẽ thêm class dark vào body. Ngược lại, nếu thẻ body đang có class dark thì toogle sẽ xóa class dark đi.
-            document.getElementById("myBody").classList.toggle("dark");
-        }
-    </script>
+   
 
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -401,8 +393,20 @@
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
 
+    <!-- JS : light_Dark(header) -->
+
+        <script>
+            document.getElementById("switchButton").onclick = function () {
+    
+                //khi button được click thì tìm đến thẻ body có id là myBody
+                //dùng classlist để gọi thuộc tính class của thẻ body
+                //Sử dụng toggle() để thêm hoặc xóa 1 class của thẻ html. Nếu thẻ body không có class dark thì toggle sẽ thêm class dark vào body. Ngược lại, nếu thẻ body đang có class dark thì toogle sẽ xóa class dark đi.
+                document.getElementById("myBody").classList.toggle("dark");
+            }
+        </script>
 
 
+        <!-- JS : switch bars(header)-->
 
         <script>
             document.getElementById("switch").onclick = function () {

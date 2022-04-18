@@ -223,7 +223,7 @@ header {
     margin : 0 20px;
 }
 
-/** Click đổi bars */
+/** Switch bars */
 #switch .fa-times{
     display: none;
 }
