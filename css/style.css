@@ -48,7 +48,7 @@ section {
 
 
 
-/* HEADER */
+/* !HEADER */
 
 header {
     background-color: white;
@@ -155,7 +155,7 @@ header {
 
 }
 
-/* Light Theme  */
+/*! Light Theme  */
 #myBody {
     background-color: white;
 }
@@ -175,7 +175,7 @@ header {
 
 }
 
-/* Dark Theme  */
+/*! Dark Theme  */
 
 .dark#myBody {
     background-color: rgba(0, 0, 0, 0.8);
@@ -241,7 +241,7 @@ header {
 
 
 
-/* Choose */
+/* !Choose */
 /* * Khi sử dụng resposive theo BS4 thì k cần những code này */
 /* .Choose__content{
     display: flex;
@@ -285,7 +285,7 @@ header {
     align-items: center;
 }
 
-/* Testimoial */
+/* !Testimoial */
 .Testimonial {
     background-color: rgb(147 107 232 / 5%);
 }
@@ -391,6 +391,19 @@ header {
     margin: 30px auto;
     
 }
+.title--center a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    border-bottom: 2px solid #189a46;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+.title--center a:hover{
+    color: #189a46;
+}
 .aboutProject{
     padding: 100px;
     background-color: rgb(147 107 232 / 5%);
@@ -418,8 +431,14 @@ header {
     font-weight: 600;
     margin: 20px 0;
     display: block;
+    transition: all 0.5s;
+}
+.aboutProject__content .card-title a:hover{
+    color: #189a46;
 
 }
+
+
 .aboutProject__content .card-text{
     font-size: 20px;
     line-height: 28px;
