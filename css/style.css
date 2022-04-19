@@ -300,7 +300,7 @@ header {
 /* * thêm FONT-GG mới vào mới có thể sài dấu của Before */
 
 
-.card-text::before {
+.Testimoial__content .card-text::before {
     content: "“";
     font-size: 50px;
     font-weight: 600;
@@ -309,7 +309,7 @@ header {
     font-family: 'Merriweather', serif;
 }
 
-.card-text::after {
+.Testimoial__content .card-text::after {
     content: "''";
     font-size: 20px;
     font-weight: 600;
@@ -326,12 +326,12 @@ header {
     align-items: center;
 }
 
-.card-img {
+.Testimoial__content .card-img {
     width: 65px;
     margin: 20px;
 }
 
-.card-img img {
+.Testimoial__content .card-img img {
     border-radius: 50%;
 }
 
@@ -382,4 +382,60 @@ header {
 .cd-top--is-visible {
     visibility: visible;
     opacity: 1;
+}
+
+/* *ABOUT */
+
+.About .title {
+    width: 700px;
+    margin: 30px auto;
+    
+}
+.aboutProject{
+    padding: 100px;
+    background-color: rgb(147 107 232 / 5%);
+}
+.aboutProject__icon i {
+    color: #189a46;
+    font-size: 30px;
+}
+.aboutProject__content .card{
+    width: 100%;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.5s;
+    
+}
+.aboutProject__content .card:hover{
+    background-color: rgb(147 107 232 / 5%);
+}
+
+.aboutProject__content .card-title a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px 0;
+    display: block;
+
+}
+.aboutProject__content .card-text{
+    font-size: 20px;
+    line-height: 28px;
+    color: #696969;
+}
+
+.aboutProject__content .card-body .button{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    border-bottom: 2px solid #189a46;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+.aboutProject__content .card-body .button:hover{
+    color: #189a46;
 }
