@@ -178,7 +178,7 @@ header {
 /*! Dark Theme  */
 
 .dark#myBody {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .dark #switchButton {
@@ -292,7 +292,7 @@ header {
 
 .item .card {
     width: 100%;
-    border: 1px solid white;
+    border: none;
     border-radius: 10px;
     margin-right: 20px;
 }
@@ -391,19 +391,6 @@ header {
     margin: 30px auto;
     
 }
-.title--center a{
-    text-decoration: none;
-    color: black;
-    font-size: 17px;
-    border-bottom: 2px solid #189a46;
-    font-weight: 600;
-    display: inline-block;
-    margin-top: 20px;
-    transition: all 0.5s;
-}
-.title--center a:hover{
-    color: #189a46;
-}
 .aboutProject{
     padding: 100px;
     background-color: rgb(147 107 232 / 5%);
@@ -438,14 +425,12 @@ header {
 
 }
 
-
 .aboutProject__content .card-text{
     font-size: 20px;
     line-height: 28px;
     color: #696969;
 }
-
-.aboutProject__content .card-body .button{
+.About #button{
     text-decoration: none;
     color: black;
     font-size: 17px;
@@ -455,6 +440,13 @@ header {
     margin-top: 20px;
     transition: all 0.5s;
 }
-.aboutProject__content .card-body .button:hover{
+.About #button:hover{
     color: #189a46;
+}
+/* *About Dark */
+.dark .About .card-title a{
+    color: white;
+}
+.dark .About #button{
+    color: white;
 }
