@@ -509,16 +509,4 @@ header {
     line-height: 55px;
     color: #189a46;
 }
-#small-dialog {
-    max-width: 750px;
-    margin: 40px auto;
-    position: relative;
-}
-.mfp-hide{
-    display: none !important;
-}
-#small-dialog iframe{
-    width: 100%;
-    height: 400px;
-    display: block;
-}
+
