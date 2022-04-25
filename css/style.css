@@ -10,15 +10,15 @@ body {
 
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.title{
+.title {
     font-size: 38px;
     font-weight: 600;
     line-height: 48px;
@@ -138,10 +138,11 @@ header {
     #capNavbar .nav-link {
         padding: 10px 0;
     }
+
     .dark #capNavbar .nav-link:hover {
         color: #189a46;
     }
-    
+
     .dark #capNavbar .nav-link::before {
         content: "";
         position: absolute;
@@ -152,15 +153,16 @@ header {
         background-color: #189a46;
         transition: all 0.5s;
     }
-    
+
     .dark #capNavbar .nav-link:hover::before {
         width: 100%;
     }
-    
+
     .dark #capNavbar .active a {
         color: #189a46;
     }
-    .light-dark{
+
+    .light-dark {
         position: absolute;
         right: 80px;
         top: 25px;
@@ -222,24 +224,225 @@ header {
 .dark #capNavbar .nav-link {
     color: white;
 }
-.dark .title h2{
+
+.dark .title h2 {
     color: white;
 }
-.dark .title p:last-of-type{
+
+.dark .title p:last-of-type {
     color: rgba(255, 255, 255, 0.504);
 }
+
 .dark .Choose__right li {
     color: #ddd;
 }
+
 .dark #capNavbar .active a {
     color: #189a46;
 }
-.light-dark{
-    margin : 0 20px;
+
+.light-dark {
+    margin: 0 20px;
 }
 
+.careCarousel {
+    position: relative;
+    padding: 0;
 
+}
 
+.careCarousel__img1::before,
+.careCarousel__img2::before,
+.careCarousel__img3::before,
+.careCarousel__img4::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #0c0c0c;
+    opacity: .6;
+    position: absolute;
+}
+
+.careCarousel__img1 {
+    background: url(../img/carousel1.jpg);
+}
+
+.careCarousel__img2 {
+    background: url(../img/carousel2.jpg);
+}
+
+.careCarousel__img3 {
+    background: url(../img/carousel3.jpg);
+}
+
+.careCarousel__img4 {
+    background: url(../img/carousel4.jpg);
+}
+
+.careCarousel__img1,
+.careCarousel__img2,
+.careCarousel__img3,
+.careCarousel__img4 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(100vh - 40px);
+    position: relative;
+}
+
+.careCarousel__bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.careCarousel__contact {
+    margin-right: 30%;
+}
+
+.careCarousel__contact1 {
+    margin-left: 38%;
+    margin-right: 0;
+}
+
+#care .careCarousel__contact h5 {
+    font-size: 66px;
+    line-height: 76px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#care .careCarousel__contact p {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    opacity: 0.9;
+}
+
+.careCarousel__contact a:first-of-type {
+    padding: 12px 35px;
+    font-size: 18px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #189a46;
+    background-color: #fff;
+}
+
+.careCarousel__contact a:last-of-type {
+    padding: 12px 35px;
+    font-size: 18px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.careCarousel__contact a:last-of-type:hover {
+    color: #189a46;
+    background-color: #fff;
+}
+
+#care .owl-nav.disabled+.owl-dots {
+    margin-top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    position: absolute;
+}
+
+@media screen and (max-width:1200px) {
+    #care .careCarousel__contact {
+        margin-right: 35%;
+    }
+
+    #care .careCarousel__contact1 {
+        margin-left: 41%;
+        margin-right: 0;
+    }
+
+    #care .careCarousel__contact h5 {
+        font-size: 52px;
+        line-height: 60px;
+
+    }
+
+    #care .careCarousel__contact p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    #care .careCarousel__contact {
+        margin-right: 0;
+    }
+
+    #care .careCarousel__contact1 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #care .careCarousel__contact h5 {
+        font-size: 48px;
+        line-height: 58px;
+
+    }
+
+    #care .careCarousel__contact p {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #care .careCarousel__contact {
+        margin-right: 0;
+    }
+
+    #care .careCarousel__contact1 {
+        margin-left: 0%;
+        margin-right: 0;
+    }
+
+    #care .careCarousel__contact h5 {
+        font-size: 48px;
+        line-height: 58px;
+
+    }
+
+    #care .careCarousel__contact p {
+        font-size: 16px;
+        line-height: 1px;
+    }
+
+    .careCarousel__img1,
+    .careCarousel__img2,
+    .careCarousel__img3,
+    .careCarousel__img4 {
+        max-height: calc(100vh - 170px);
+    }
+}
+
+@media screen and (max-width:576px) {
+    .careCarousel__img1,
+    .careCarousel__img2,
+    .careCarousel__img3,
+    .careCarousel__img4 {
+        max-height: calc(100vh - 250px);
+    }
+
+    #care{
+        max-height: 100%;
+        background-attachment: fixed;
+    }
+}
 
 /* Choose */
 /* * Khi sử dụng resposive theo BS4 thì k cần những code này */
@@ -281,47 +484,64 @@ header {
     margin-right: 10px;
 }
 
+.Choose__content .row {
+    align-items: center;
+}
+
 /* Number */
 
-.number{
+.number {
     text-align: center;
     background-color: #189a46;
     color: #fff;
-    padding: 45px 0 70px 0; 
+    padding: 45px 0 70px 0;
+    /* position: sticky; */
+    /* width: 100%; */
 }
 
-.number__content{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    
+.number .row {
+    align-items: center;
+
+}
+
+.number .col {
+    padding: 0;
 }
 
 
 
-.number__item p{
+.number p {
     font-size: 50px;
-    font-weight: 600;
     line-height: 60px;
+    font-weight: 600;
+    color: #fff;
     margin-top: 30px;
     margin-bottom: 0;
 }
 
-.number__item h4{
+.number h4 {
     font-size: 20px;
     line-height: 25px;
     text-transform: capitalize;
+    color: #fff;
     margin-top: 10px;
-    margin-bottom: 0;
-    color: rgba(255, 255, 255, 0.748);
+    opacity: 0.8;
     font-weight: 400;
 }
 
+@media screen and (max-width:992px) {
+    .number p {
+        font-size: 40px;
+    }
 
+    .number h4 {
+        font-size: 18px
+    }
 
-
-.Choose__content .row {
-    align-items: center;
 }
+
+
+
 
 /* Testimoial */
 .Testimonial {
@@ -393,16 +613,28 @@ header {
 
 /* Footer */
 
-footer{
-    padding-bottom: 500px;
+footer {
+    /* padding-bottom: 500px; */
 }
 
-.footer__top{
-    text-align: center  ;
-    padding: 70px 420px;
+.footer__top {
+    text-align: center;
+    padding: 70px 0;
+
 }
 
-.footer__top p{
+.footer__title {
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer__plus {
+    margin-left: 40%;
+    transform: translateX(-40%);
+}
+
+.footer__top p {
     font-size: 20px;
     line-height: 28px;
     color: #696969;
@@ -410,16 +642,16 @@ footer{
     margin-bottom: 0;
 }
 
-.footer__topform{
+.footer__topform {
     display: flex;
     justify-content: space-between;
 }
 
-form{
+form {
     margin-top: 50px;
 }
 
-.form__control{
+.form__control {
     color: #495057;
     border: 1px solid #ced4da;
     border-radius: 10px;
@@ -431,11 +663,11 @@ form{
     outline: none;
 }
 
-.form__control:focus{
+.form__control:focus {
     border: 1px solid #189a46;
 }
 
-.footer__button{
+.footer__button {
     width: 27%;
     color: #fff;
     background-color: #189a46;
@@ -445,12 +677,12 @@ form{
     transition: all .5s;
 }
 
-.footer__button:hover{
+.footer__button:hover {
     background-color: #116E32;
     border: 1px #116E32 solid;
 }
 
-.footer__body{
+.footer__body {
     background-color: #111111;
     color: #696969;
     font-weight: normal;
@@ -458,7 +690,7 @@ form{
     line-height: 28px;
 }
 
-.footer__body h6{
+.footer__body h6 {
     color: #fff;
     font-size: 20px;
     line-height: 26px;
@@ -467,84 +699,133 @@ form{
 }
 
 .footer__body ul li,
-.footer__body li a{
+.footer__body li a {
     color: #696969;
 }
 
-.footer__bodycontent a:hover{
+.footer__bodycontent a:hover {
     color: #fff;
     text-decoration: underline;
 }
 
 
-.footer__bodytop{
+.footer__bodytop {
     padding: 60px 0;
     border-bottom: 1px #262525 solid;
 }
 
-.footer__bodycontent{
-    display: flex;
-}
-
-.footer__bodyleft, 
-.footer__bodyright{
-    width: 50%;
-}
-
-.footer__bodyleft span{
+.footer__bodyleft span {
     font-weight: bolder;
 }
 
-.footer__bodyleft p{
+.footer__bodyleft p {
     margin-bottom: 10px;
 }
 
-.footer__icon ul{
+.footer__icon ul {
     margin-bottom: 0;
 }
 
-.footer__icon li{
+.footer__icon li {
     display: inline-block;
     margin-right: 15px;
-    
+
 }
 
-.footer__icon i{
+.footer__icon i {
     font-size: 15px;
 }
 
-
-
-.footer__bodyright{
-    display: flex;
+.footer__item {
+    padding: 0;
 }
 
-.footer__item{
-    width: calc(100% / 3);
-    padding-left: 15px;
-}
-
-.footer__item li{
+.footer__item li {
     margin-bottom: 5px;
 }
 
-.footer__bodybottom{
+.footer__bodybottom {
     text-align: center;
     padding: 25px 0;
 }
 
-.footer__bodybottom p{
+.footer__bodybottom p {
     margin-bottom: 0;
 }
 
-.footer__bodybottom a{
+.footer__bodybottom a {
     color: #f53626;
 }
 
-.footer__bodybottom a:hover{
+.footer__bodybottom a:hover {
     color: #f53626;
     text-decoration: underline;
 }
+
+
+@media screen and (max-width:992px) {
+
+    .footer__top h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .footer__top p {
+        font-size: 19px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .footer__plus {
+        margin-left: 10%;
+        transform: translateX(-10%);
+    }
+
+    .footer__topform {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #fTop .form-control {
+        display: block;
+    }
+
+    #fTop .footer__button {
+        display: block;
+        width: 150px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        height: 55px;
+        color: #fff;
+        background-color: #189a46;
+        border: 1px #189a46 solid;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all .5s;
+    }
+
+    #fTop .footer__button:hover {
+        background-color: #116E32;
+        border: 1px #116E32 solid;
+    }
+
+    .footer__row{
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    #fTop .footer__button {
+        width: 100%;
+    }
+}
+
+
+
 
 
 
@@ -572,9 +853,4 @@ form{
     transform: translateY(-10px);
     text-decoration: none;
     color: white;
-}
-
-.cd-top--is-visible {
-    visibility: visible;
-    opacity: 1;
 }
