@@ -222,7 +222,6 @@ header {
 .light-dark{
     margin : 0 20px;
 }
-
 /** Switch bars */
 #switch .fa-times{
     display: none;
@@ -239,7 +238,20 @@ header {
     display: none;
 }
 
+/* *About Dark */
+.dark .About .card-title a,
+.dark .About #button{
+    color: white;
+}
 
+/* * Testimonial dark*/
+.dark #start {
+    color: #f53626;
+}
+.dark .Testimoial__content .item .card-text {
+    color: rgba(255, 255, 255, 0.52)
+
+}
 
 /* !Choose */
 /* * Khi sử dụng resposive theo BS4 thì k cần những code này */
@@ -317,8 +329,10 @@ header {
 
 }
 
-.item .card-text {
+.Testimoial__content .item .card-text {
     font-size: 20px;
+    color:rgba(0, 0, 0, 0.5);
+
 }
 
 .card-bottom {
@@ -352,7 +366,7 @@ header {
 .owl-theme .owl-nav.disabled+.owl-dots {
     margin-top: 40px;
 }
-
+/** BackToTop */
 .BackToTop {
     position: fixed;
     bottom: 90px;
@@ -442,11 +456,4 @@ header {
 }
 .About #button:hover{
     color: #189a46;
-}
-/* *About Dark */
-.dark .About .card-title a{
-    color: white;
-}
-.dark .About #button{
-    color: white;
 }
