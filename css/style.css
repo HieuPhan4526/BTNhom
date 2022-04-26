@@ -60,6 +60,12 @@ section {
 .title--center p:first-of-type {
     color: #f53626;
 }
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 
 
 
@@ -718,6 +724,7 @@ header {
 
 /* Footer */
 
+
 .footer__top {
     text-align: center;
     padding: 70px 0;
@@ -960,3 +967,139 @@ form {
     visibility: visible;
     opacity: 1;
 }
+
+/* PLANS  */
+.plans{
+    padding-top: 30px;
+    background: rgb(147 107 232 / 5%);
+}
+.plans__footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 5% auto;
+    margin-top: 0;
+    width: 90%; 
+}
+.plans__item{
+    border-radius: 6px;
+    align-self: center;
+    background-color: #fff;
+}
+.plans__content{
+    padding: 55px 40px;
+    border-right: 0;
+}
+.plans__top{
+    text-align: center;
+}
+.plans__top h6{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.plans__top h4{
+    font-size: 40px;
+    line-height: 45px;
+    margin: 15px 0 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #189a46;
+}
+.plans__top h4 label {
+    font-size: 25px;
+    vertical-align: text-top;
+}
+.plans__top h4 span{
+    font-size: 16px;
+    line-height: 25px;
+    color: #999;
+    font-weight: 400;
+}
+.plans__bot{
+    text-align: center;
+    padding: 1em;
+}
+.plans__button {
+    margin-top: 2em;
+}
+.btn-plans{
+    color: #fff;
+    background-color: #189A46;
+    border-color: #189A46;
+    border-radius: 10px;
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    transition: 0.3s ease-in;
+    text-transform: capitalize;
+}
+.plans__button a:hover {
+    text-decoration: none;
+    background-color: #056627;
+    color: #fff;
+}
+.plans__active{
+    box-shadow: 0 10px 30px 0 rgb(17 17 17 / 9%);
+    z-index: 1;
+    border-radius: 6px;
+}
+.plans__tren{
+    padding: 3em 2.5em 0.5em;
+    background: #189a46;
+    color: #fff;
+}
+.plans__tren h5{
+    font-size: 15px;
+    line-height: 20px;
+    color: #189a46;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+.plans__tren h4{
+    color: #fff;
+}
+.plans__tren h4 span{
+    color: #fff;
+}
+
+/* NUTRITON */
+.video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.nutriton__video{
+    position: relative;
+}
+.nutriton__video a{
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: calc(50% - 40px);
+}
+.nutriton__video .play-icon {
+    background: #fff;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    -webkit-animation: ripple 1s linear infinite;
+    animation: ripple 1s linear infinite;
+}
+.nutriton__video .fa{
+    line-height: 55px;
+    color: #189a46;
+}
+
