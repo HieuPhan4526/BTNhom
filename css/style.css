@@ -274,7 +274,7 @@ header {
 
 /* *About Dark */
 .dark .About .card-title a,
-.dark .About #button{
+.dark .About #aboutButton{
     color: white;
 }
 
@@ -540,7 +540,7 @@ header {
     line-height: 28px;
     color: #696969;
 }
-.About #button{
+.About #aboutButton{
     text-decoration: none;
     color: black;
     font-size: 17px;
@@ -550,26 +550,15 @@ header {
     margin-top: 20px;
     transition: all 0.5s;
 }
-.About #button:hover{
+.About #aboutButton:hover{
     color: #189a46;
 }
 
 
 
 /* !Choose */
-/* * Khi sử dụng resposive theo BS4 thì k cần những code này */
-/* .Choose__content{
-    display: flex;
-    align-items: center;
-} */
-/* .Choose__left{ */
-/* width: 50%; */
-/* margin-right: 50px; */
-/* } */
 
-/* .Choose__right {
-    width: 50%;
-} */
+
 .Choose__left img {
     width: 100%;
     border-radius: 15px;
