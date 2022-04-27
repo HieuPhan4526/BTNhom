@@ -36,11 +36,18 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     <!-- owl carousel -->
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Magnific Popup  -->
-    <link rel="stylesheet" href="./css/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+        integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <!-- Main Css -->
@@ -58,9 +65,11 @@
             <h1>
                 <a class="navbar-brand" href="#">Pooch Care</a>
             </h1>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#capNavbar"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
+            <button id="switch" class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#capNavbar" aria-expanded="false" aria-label="Toggle navigation"
+                title="Click to switch theme">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-times"></i>
             </button>
 
 
@@ -118,7 +127,6 @@
             </div>
         </nav>
     </header>
-
 
     <section class="careCarousel" id="care">
         <div class="careCarousel__content" id="care__content">
@@ -182,7 +190,143 @@
             </div>
         </div>
     </section>
-    <section class="About"></section>
+    <section class="About">
+        <div class="container">
+            <div class="title title--center col-12">
+                <p>ABOUT US</p>
+                <h2>We Love Your Pets Like They Are Our Own</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur
+                    consequatur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                    Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis.
+
+
+
+                </p>
+                <a id="aboutButton" href="#">Read More</a>
+
+            </div>
+        </div>
+        <div class="aboutProject">
+            <div class="container">
+                <div class="aboutProject__content">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="aboutProject__icon">
+                                        <i class="fa-solid fa-snowflake"></i>
+                                    </div>
+                                    <h5 class="card-title">
+                                        <a href="#">Dog Walking</a>
+                                    </h5>
+                                    <p class="card-text">
+                                        Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet.
+                                        Lorem ipsum dolor sit amet Ut blandit eu leo.
+                                    </p>
+                                    <a id="aboutButton" href="#">Read More</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="aboutProject__icon">
+                                        <i class="fa-solid fa-utensils"></i>
+                                    </div>
+                                    <h5 class="card-title">
+                                        <a href="#">Healthy Meals</a>
+                                    </h5>
+                                    <p class="card-text">
+                                        Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet.
+                                        Lorem ipsum dolor sit amet Ut blandit eu leo.
+                                    </p>
+                                    <a id="aboutButton" href="#">Read More</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="aboutProject__icon">
+                                        <i class="fa-solid fa-hands"></i>
+                                    </div>
+                                    <h5 class="card-title">
+                                        <a href="#">Pet Sitting</a>
+                                    </h5>
+                                    <p class="card-text">
+                                        Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet.
+                                        Lorem ipsum dolor sit amet Ut blandit eu leo.
+                                    </p>
+                                    <a id="aboutButton" href="#">Read More</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="aboutProject__icon">
+                                        <i class="fa-solid fa-sitemap"></i>
+                                    </div>
+                                    <h5 class="card-title">
+                                        <a href="#">Dog Activities</a>
+                                    </h5>
+                                    <p class="card-text">
+                                        Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet.
+                                        Lorem ipsum dolor sit amet Ut blandit eu leo.
+                                    </p>
+                                    <a id="aboutButton" href="#">Read More</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="aboutProject__icon">
+                                        <i class="fa-solid fa-shower"></i>
+                                    </div>
+                                    <h5 class="card-title">
+                                        <a href="#">Pet Daycare</a>
+                                    </h5>
+                                    <p class="card-text">
+                                        Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet.
+                                        Lorem ipsum dolor sit amet Ut blandit eu leo.
+                                    </p>
+                                    <a id="aboutButton" href="#">Read More</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="aboutProject__icon">
+                                        <i class="fa-solid fa-user-doctor"></i>
+                                    </div>
+                                    <h5 class="card-title">
+                                        <a href="#">Pet Grooming</a>
+                                    </h5>
+                                    <p class="card-text">
+                                        Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet.
+                                        Lorem ipsum dolor sit amet Ut blandit eu leo.
+                                    </p>
+                                    <a id="aboutButton" href="#">Read More</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <section class="Choose container">
         <div class="Choose__content">
             <div class="row">
@@ -232,8 +376,8 @@
             </div>
         </div>
     </section>
-    
-    
+
+
     <section class="number" id="num">
         <div class="container">
             <div class="row row-cols-2 row-cols-lg-4">
@@ -265,7 +409,7 @@
                 </div>
             </div>
             <div class="plans__footer">
-                <div class="plans__item">
+                <div class="plans__item ">
                     <div class="plans__content">
                         <div class="plans__top">
                             <h6>Free Package</h6>
@@ -300,46 +444,44 @@
 
                     </div>
                 </div>
-                <div class="plans__item plans__active">
-                    <div class="plans__content plans__active">
-                        <div class="plans__top plans__tren">
-                            <h5>Save 10%</h5>
-                            <h6>Free Package</h6>
-                            <h4>
-                                <label>$</label>39<span>/month</span>
-                            </h4>
-                        </div>
-                        <div class="plans__bot">
-                            <div class="plans__botbot">
-                                <ul>
-                                    <li>
-                                        <p>5 Dog Walk</p>
-                                    </li>
-                                    <li>
-                                        <p>3 Vet Visit</p>
-                                    </li>
-                                    <li>
-                                        <p>3 Pet Spa</p>
-                                    </li>
-                                    <li>
-                                        <p>Free Supports</p>
-                                    </li>
-                                    <li>
-                                        <p>Customer Support</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="plans__button">
-                                <a class="btn-plans" href="#buy">GET STARTED</a>
-                            </div>
-                        </div>
-
+                <div class="plans__item plans__active ">
+                    <div class="plans__top">
+                        <h5>Save 10%</h5>
+                        <h6>Standard Package</h6>
+                        <h4>
+                            <label>$</label>39<span>/month</span>
+                        </h4>
                     </div>
+                    <div class="plans__bot">
+                        <div class="plans__botbot">
+                            <ul>
+                                <li>
+                                    <p>5 Dog Walk</p>
+                                </li>
+                                <li>
+                                    <p>3 Vet Visit</p>
+                                </li>
+                                <li>
+                                    <p>3 Pet Spa</p>
+                                </li>
+                                <li>
+                                    <p>Free Supports</p>
+                                </li>
+                                <li>
+                                    <p>Customer Support</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="plans__button">
+                            <a class="btn-plans" href="#buy">GET STARTED</a>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="plans__item">
+                <div class="plans__item ">
                     <div class="plans__content">
                         <div class="plans__top">
-                            <h6>Free Package</h6>
+                            <h6>Pro Package</h6>
                             <h4>
                                 <label>$</label>89<span>/month</span>
                             </h4>
@@ -393,13 +535,13 @@
                 <div id="small-dialog" class="mfp-hide zoom-anim-dialog">
                     <iframe src="https://player.vimeo.com/video/101587706" frameborder="0" allow="autoplay; fullscreen"
                         allowfullscreen __idm_id__="1499137"></iframe>
-        </div>
+                </div>
     </section>
     <section class="Testimonial">
-        
+
         <div class="container ">
             <div class="title title--center">
-                <p>TESTIMONIALS</p>
+                <p id="start">TESTIMONIALS</p>
                 <h2>Happy Clients & Feedbacks</h2>
             </div>
             <div class="Testimoial__content">
@@ -556,17 +698,18 @@
         <div class="footer__top" id="fTop">
             <div class="footer__toptitle">
                 <div class="container">
-                    <div class="footer__title" >
+                    <div class="footer__title">
                         <div class="footer__plus">
 
                             <h2 class="title">Stay Updated!</h2>
-                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla
+                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                                Nulla
                                 mollis
                                 dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
                             <form action="#">
                                 <div class="footer__topform">
-                                    <input class="form__control" type="mail" placeholder="Enten your email..." name="email"
-                                        required>
+                                    <input class="form__control" type="mail" placeholder="Enten your email..."
+                                        name="email" required>
                                     <button class="footer__button">Subscribe</button>
                                 </div>
                             </form>
@@ -580,110 +723,110 @@
                 <div class="container">
                     <div class="footer__bodytop">
                         <!-- <div class="container"> -->
-                            <div class="footer__bodycontent row row-cols-1 row-cols-md-2">
-                                <div class="footer__bodyleft col-12 col-md-6">
-                                    <h6>Contact information</h6>
+                        <div class="footer__bodycontent row row-cols-1 row-cols-md-2">
+                            <div class="footer__bodyleft col-12 col-md-6">
+                                <h6>Contact information</h6>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <span>Address</span>
+                                            : #135 block, Barnard St. Brooklyn, London 10036, UK
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>Phone</span> :
+                                            <a href="tel:+(12)234-11-24"> +(12)234-11-24</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>Email</span> :
+                                            <a href="mailto:example@mail.com"> example@mail.com</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="footer__icon">
                                     <ul>
-                                        <li>
-                                            <p>
-                                                <span>Address</span>
-                                                : #135 block, Barnard St. Brooklyn, London 10036, UK
-                                            </p>
+                                        <li class="facebook">
+                                            <a href="">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </a>
                                         </li>
-                                        <li>
-                                            <p>
-                                                <span>Phone</span> :
-                                                <a href="tel:+(12)234-11-24"> +(12)234-11-24</a>
-                                            </p>
+                                        <li class="twitter">
+                                            <a href="">
+                                                <i class="fa-brands fa-twitter"></i>
+                                            </a>
                                         </li>
-                                        <li>
-                                            <p>
-                                                <span>Email</span> :
-                                                <a href="mailto:example@mail.com"> example@mail.com</a>
-                                            </p>
+                                        <li class="dribbble">
+                                            <a href="">
+                                                <i class="fa-brands fa-dribbble"></i>
+                                            </a>
+                                        </li>
+                                        <li class="google">
+                                            <a href="">
+                                                <i class="fa-brands fa-google"></i>
+                                            </a>
                                         </li>
                                     </ul>
-                                    <div class="footer__icon">
+                                </div>
+                            </div>
+                            <div class="footer__bodyright col-12 col-md-6">
+                                <div class="footer__row row row-cols-2 row-cols-sm-3">
+                                    <div class="footer__item col-6 col-sm-4">
+                                        <h6>Company</h6>
                                         <ul>
-                                            <li class="facebook">
-                                                <a href="">
-                                                    <i class="fa-brands fa-facebook-f"></i>
-                                                </a>
+                                            <li>
+                                                <a href="">About Us</a>
                                             </li>
-                                            <li class="twitter">
-                                                <a href="">
-                                                    <i class="fa-brands fa-twitter"></i>
-                                                </a>
+                                            <li>
+                                                <a href="">Blog Posts</a>
                                             </li>
-                                            <li class="dribbble">
-                                                <a href="">
-                                                    <i class="fa-brands fa-dribbble"></i>
-                                                </a>
+                                            <li>
+                                                <a href="">Services</a>
                                             </li>
-                                            <li class="google">
-                                                <a href="">
-                                                    <i class="fa-brands fa-google"></i>
-                                                </a>
+                                            <li>
+                                                <a href="">Pricing</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer__item col-6 col-sm-4">
+                                        <h6>Quick Links</h6>
+                                        <ul>
+                                            <li>
+                                                <a href="">Contact Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Create account</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Care Center</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Site Feedack</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer__item col-6 col-sm-4">
+                                        <h6>Support</h6>
+                                        <ul>
+                                            <li>
+                                                <a href="">All Dogs</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Care Advices</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Care Support</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Veterinary Help</a>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="footer__bodyright col-12 col-md-6">
-                                    <div class="footer__row row row-cols-2 row-cols-sm-3">
-                                        <div class="footer__item col-6 col-sm-4">
-                                            <h6>Company</h6>
-                                            <ul>
-                                                <li>
-                                                    <a href="">About Us</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Blog Posts</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Services</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Pricing</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="footer__item col-6 col-sm-4">
-                                            <h6>Quick Links</h6>
-                                            <ul>
-                                                <li>
-                                                    <a href="">Contact Us</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Create account</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Care Center</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Site Feedack</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="footer__item col-6 col-sm-4">
-                                            <h6>Support</h6>
-                                            <ul>
-                                                <li>
-                                                    <a href="">All Dogs</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Care Advices</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Care Support</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Veterinary Help</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
+                        </div>
                         <!-- </div> -->
                     </div>
                     <div class="footer__bodybottom">
@@ -718,74 +861,23 @@
     gắn chức năng click cho switchButton -->
 
 
-    <script>
-        document.getElementById("switchButton").onclick = function () {
 
-            //khi button được click thì tìm đến thẻ body có id là myBody
-            //dùng classlist để gọi thuộc tính class của thẻ body
-            //Sử dụng toggle() để thêm hoặc xóa 1 class của thẻ html. Nếu thẻ body không có class dark thì toggle sẽ thêm class dark vào body. Ngược lại, nếu thẻ body đang có class dark thì toogle sẽ xóa class dark đi.
-            document.getElementById("myBody").classList.toggle("dark");
-        }
-    </script>
 
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     <!-- owl carousel -->
-    <script src="./js/owl.carousel.min.js"></script>
-
-    <script>
-        $('.owl-two').owlCarousel({
-            loop: true,
-            items: 2,
-            margin: 20,
-            nav: false,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                992: {
-                    items: 1,
-                },
-                1000: {
-                    items: 2,
-                    nav: false,
-                    loop: false,
-                }
-            }
-        })
-
-    </script>
-
-    <!-- Magnicfic popup  -->
-
-    <script src="./js/jquery.magnific-popup.js"></script>
-    <script>
-        $('.test-popup-link').magnificPopup({
-            type: 'inline',
-
-            fixedContentPos: false,
-            fixedBgPos: true,
-
-            overflowY: 'auto',
-
-            closeBtnInside: true,
-            preloader: false,
-
-            midClick: true,
-            removalDelay: 300
-            
-        });
-
-    </script>
-
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
         $('.owl-one').owlCarousel({
@@ -819,16 +911,84 @@
         })
     </script>
 
-    <!-- Waypoints -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-two').owlCarousel({
+            loop: true,
+            items: 2,
+            margin: 20,
+            nav: false,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                992: {
+                    items: 1,
+                },
+                1000: {
+                    items: 2,
+                    nav: false,
+                    loop: false,
+                }
+            }
+        })
+
+    </script>
+
+
     <!-- Counter -->
     <script src="./js/jquery.countup.min.js"></script>
-
     <script>
         $('.counter').countUp();
     </script>
+
+
+    <!-- Magnicfic popup  -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"
+        integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.test-popup-link').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300
+
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".popup-with-zoom-anim").magnificPopup({
+                type: "inline",
+                fixedContentPos: false,
+                fixedBgPos: true,
+                overflowY: "auto",
+                closeBtnInside: true,
+                preloader: false,
+                midClick: true,
+                removalDelay: 300,
+                mainClass: "my-mfp-zoom-in"
+            });
+        });
+    </script>
+
+
+
+
+
+
+
     <script src="./js/main.js"></script>
     <script src="./js/util.js"></script>
 
@@ -839,6 +999,27 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
+
+    <!-- JS : light_Dark(header) -->
+
+    <script>
+        document.getElementById("switchButton").onclick = function () {
+
+            //khi button được click thì tìm đến thẻ body có id là myBody
+            //dùng classlist để gọi thuộc tính class của thẻ body
+            //Sử dụng toggle() để thêm hoặc xóa 1 class của thẻ html. Nếu thẻ body không có class dark thì toggle sẽ thêm class dark vào body. Ngược lại, nếu thẻ body đang có class dark thì toogle sẽ xóa class dark đi.
+            document.getElementById("myBody").classList.toggle("dark");
+        }
+    </script>
+
+
+    <!-- JS : switch bars(header)-->
+
+    <script>
+        document.getElementById("switch").onclick = function () {
+            document.getElementById("myBody").classList.toggle("noscroll");
+        }
+    </script>
 
 </body>
 
