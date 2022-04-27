@@ -18,18 +18,15 @@ a {
     text-decoration: none;
 }
 
+section {
+    padding: 100px 0;
+}
+
 .title {
     font-size: 38px;
     font-weight: 600;
     line-height: 48px;
 }
-
-
-
-section {
-    padding: 100px 0;
-}
-
 
 .title p:first-of-type {
     font-size: 18px;
